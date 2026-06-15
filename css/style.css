@@ -67,7 +67,17 @@ p {
     font-size: 16px;
 }
 /* research images */
+.image-grid table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse; /* 外枠の線が二重になるのを防ぐ（お好みで） */
+}
 
+.image-grid img {
+    display: block; /* 画像の下に変な隙間ができるのを防ぐ */
+    max-width: 100%; /* 親要素からはみ出さないようにする */
+    height: auto;
+}
 .image-grid {
     display: flex;       /* 横並びにする */
     flex-wrap: wrap;     /* 画面幅が狭いときは折り返す */
