@@ -73,6 +73,12 @@ p {
     gap: 20px;
     margin-top: 30px;
 }
+.image-grid {
+    display: flex;       /* 横並びにする */
+    flex-wrap: wrap;     /* 画面幅が狭いときは折り返す */
+    justify-content: center; /* ★中身を完全に中央に寄せる */
+    gap: 15px;           /* 写真と写真の間のすき間 */
+}
 .image-grid img {
     width: 100%;
     height: 200px;
