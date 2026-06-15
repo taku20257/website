@@ -85,9 +85,6 @@ p {
     transform: scale(1.03);
     cursor: pointer;
 }
-.image-grid table {
-    margin: 0 auto; /* 左右の余白を自動調整して中央揃えにする */
-    border-collapse: collapse; /* 枠線をきれいにする（お好みで） */
 }
 /* contact form */
 form {
