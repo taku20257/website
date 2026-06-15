@@ -66,6 +66,21 @@ p {
     line-height: 1.8;
     font-size: 16px;
 }
+/* 1. 画像が画面やカードからはみ出さないようにサイズを制限する */
+.image-grid img {
+    max-width: 100%;   /* 横幅が親要素（テーブル）からはみ出ないようにする */
+    max-height: 400px; /* ★画像の高さの最大値を指定（お好みの高さに調整してください） */
+    width: auto;       /* 縦横比を崩さない */
+    height: auto;      /* 縦横比を崩さない */
+    display: block;    /* 画像の下にできる謎の隙間を消す */
+    margin: 0 auto;    /* 画像自体も中央に寄せる */
+}
+
+/* 2. もしテーブルの枠線が潰れていたら、テーブル自体の余白も少し開ける */
+.image-grid table {
+    margin: 20px auto; /* 上下に20pxの隙間を作りつつ、左右は中央揃え */
+    border-collapse: collapse;
+}
 /* research images */
 .image-grid table {
     margin-left: auto;
