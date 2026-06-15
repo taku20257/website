@@ -138,10 +138,25 @@ button {
 button:hover {
     background: #d77b83;
 }
+/* 1. ページ全体、またはメインコンテンツの親要素をFlexboxにする */
+.main-content {
+    display: flex;
+    flex-direction: column; /* 上から下に並べる */
+    min-height: 100vh;      /* 最低でも画面全体の高さ（100vh）を確保する */
+    box-sizing: border-box; 
+}
+
+/* 2. カード部分（コンテンツ）を限界まで広げて、フッターを下に押し出す */
+.card {
+    flex: 1; /* 利用可能な残りのスペースをすべて埋める */
+}
+
+/* 3. フッターのデザイン（お好みで調整してください） */
 footer {
     text-align: center;
-    margin-top: 40px;
-    color: #555;
+    padding: 20px 0;
+    width: 100%;
+    background-color: #f4f4f4; /* 背景色をつけると位置が分かりやすくなります */
 }
 .線{
     position: fixed;
